@@ -9,6 +9,8 @@ license = "MPL-2.0"
 python = ">=3.8"
 sphinx = {version = "^3.5.2", optional = true}
 furo = {version = "^2021.2.28-beta.28", optional = true}
+wheel = "^0.36.2"
+pynwb = "^1.4.0"
 
 [tool.poetry.extras]
 docs = ['sphinx', 'furo']
