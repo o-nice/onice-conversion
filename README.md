@@ -6,5 +6,5 @@
 # onice-conversion
 Shared toolset for converting data to NWB!!!
 
-21-03-18: just getting boilerplate set up! I'll schematize an 
+2021-03-18: just getting boilerplate set up! I'll schematize an 
 abstract class and write docs for contributing within the week <3
