@@ -5,8 +5,14 @@ python:
 os:
   - linux
 
+addons:
+  apt:
+    packages:
+      - libhdf5-dev
+
 before_install:
-  - pip install poetry pytest pytest-cov coveralls
+  - pip install -U pip
+  - pip install poetry pytest pytest-cov coveralls wheel
 
 install:
   - poetry install
