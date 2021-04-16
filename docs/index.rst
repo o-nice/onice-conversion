@@ -8,7 +8,21 @@ Welcome to onice_conversion's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Examples
+
+
+
+
+.. toctree::
+   :maxdepth: 4
+   :caption: API Documentation
+
+   api/containers.rst
+   api/
 
 
 

@@ -32,11 +32,30 @@ release = '0.1.0'
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon'
+    'sphinx.ext.napoleon',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.mathjax',
+    'nbsphinx'
 ]
+
+napoleon_google_docstring = True
+napoleon_use_param = False
+napoleon_use_ivar = True
+napoleon_include_init_with_doc = True
+napoleon_include_private_with_doc = True
+napoleon_include_special_with_doc = True
 
 autoclass_content = "both"
 autodoc_member_order = "bysource"
+autodata_content = "both"
+autodoc_default_options = {
+    'members': True,
+    'member-order': 'bysource',
+    'private-members': True,
+    'show-inheritance': False,
+    'toctree': True,
+    'undoc-members': True,
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
