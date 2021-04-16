@@ -2,7 +2,7 @@ PyNWB Containers
 =================
 
 .. autosummary::
-    :toctree: api/containers
+    :toctree:
     :recursive:
 
     onice_conversion.containers

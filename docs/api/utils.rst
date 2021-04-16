@@ -2,7 +2,7 @@ Utils
 ======
 
 .. autosummary::
-    :toctree: api/utils
+    :toctree:
     :recursive:
 
     onice_conversion.utils

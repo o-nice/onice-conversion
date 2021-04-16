@@ -2,7 +2,7 @@ NWB Converter
 ==============
 
 .. autosummary::
-    :toctree: api/nwbconverter
+    :toctree:
     :recursive:
 
     onice_conversion.nwbconverter

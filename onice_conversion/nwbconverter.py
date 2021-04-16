@@ -30,3 +30,4 @@ class NWBConverter(_NWBConverter):
         Returns:
 
         """
+        pass
