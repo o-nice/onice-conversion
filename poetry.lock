@@ -27,7 +27,7 @@ version = "0.3.3"
 category = "main"
 description = "Async generators and context managers for Python 3.5+"
 name = "async-generator"
-optional = true
+optional = false
 python-versions = ">=3.5"
 version = "1.10"
 
@@ -58,7 +58,7 @@ tests_no_zope = ["coverage (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0
 category = "main"
 description = "Extended sphinx autodoc including automatic autosummaries"
 name = "autodocsumm"
-optional = false
+optional = true
 python-versions = ">=3.5"
 version = "0.2.3"
 
@@ -105,7 +105,7 @@ lxml = ["lxml"]
 category = "main"
 description = "An easy safelist-based HTML-sanitizing tool."
 name = "bleach"
-optional = true
+optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 version = "3.3.0"
 
@@ -127,7 +127,7 @@ category = "main"
 description = "Foreign Function Interface for Python calling C code."
 marker = "implementation_name == \"pypy\""
 name = "cffi"
-optional = true
+optional = false
 python-versions = "*"
 version = "1.14.5"
 
@@ -163,7 +163,7 @@ version = "4.4.2"
 category = "main"
 description = "XML bomb protection for Python stdlib modules"
 name = "defusedxml"
-optional = true
+optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 version = "0.7.1"
 
@@ -179,7 +179,7 @@ version = "0.16"
 category = "main"
 description = "Discover and load entry points from installed packages."
 name = "entrypoints"
-optional = true
+optional = false
 python-versions = ">=2.7"
 version = "0.3"
 
@@ -315,7 +315,7 @@ test = ["nose (>=0.10.1)", "requests", "testpath", "pygments", "nbformat", "ipyk
 category = "main"
 description = "Vestigial utilities from IPython"
 name = "ipython-genutils"
-optional = true
+optional = false
 python-versions = "*"
 version = "0.2.0"
 
@@ -378,7 +378,7 @@ format_nongpl = ["idna", "jsonpointer (>1.13)", "webcolors", "rfc3986-validator 
 category = "main"
 description = "Jupyter protocol implementation and client libraries"
 name = "jupyter-client"
-optional = true
+optional = false
 python-versions = ">=3.6.1"
 version = "6.2.0"
 
@@ -398,7 +398,7 @@ test = ["async-generator", "ipykernel", "ipython", "mock", "pytest-asyncio", "py
 category = "main"
 description = "Jupyter core package. A base package on which Jupyter projects rely."
 name = "jupyter-core"
-optional = true
+optional = false
 python-versions = ">=3.6"
 version = "4.7.1"
 
@@ -410,7 +410,7 @@ traitlets = "*"
 category = "main"
 description = "Pygments theme using JupyterLab CSS variables"
 name = "jupyterlab-pygments"
-optional = true
+optional = false
 python-versions = "*"
 version = "0.1.2"
 
@@ -455,7 +455,7 @@ version = "1.1.1"
 category = "main"
 description = "The fastest markdown parser in pure Python"
 name = "mistune"
-optional = true
+optional = false
 python-versions = "*"
 version = "0.8.4"
 
@@ -475,7 +475,7 @@ icu = ["PyICU (>=1.0.0)"]
 category = "main"
 description = "A client library for executing notebooks. Formerly nbconvert's ExecutePreprocessor."
 name = "nbclient"
-optional = true
+optional = false
 python-versions = ">=3.6.1"
 version = "0.5.3"
 
@@ -495,7 +495,7 @@ test = ["codecov", "coverage", "ipython", "ipykernel", "ipywidgets", "pytest (>=
 category = "main"
 description = "Converting Jupyter Notebooks"
 name = "nbconvert"
-optional = true
+optional = false
 python-versions = ">=3.6"
 version = "6.0.7"
 
@@ -525,7 +525,7 @@ webpdf = ["pyppeteer (0.2.2)"]
 category = "main"
 description = "The Jupyter Notebook format"
 name = "nbformat"
-optional = true
+optional = false
 python-versions = ">=3.5"
 version = "5.1.3"
 
@@ -543,7 +543,7 @@ test = ["check-manifest", "fastjsonschema", "testpath", "pytest", "pytest-cov"]
 category = "main"
 description = "Jupyter Notebook Tools for Sphinx"
 name = "nbsphinx"
-optional = true
+optional = false
 python-versions = ">=3.6"
 version = "0.8.3"
 
@@ -557,9 +557,21 @@ traitlets = "*"
 
 [[package]]
 category = "main"
+description = "A sphinx extension for including notebook files outside sphinx source root"
+name = "nbsphinx-link"
+optional = false
+python-versions = "*"
+version = "1.3.0"
+
+[package.dependencies]
+nbsphinx = "*"
+sphinx = ">=1.8"
+
+[[package]]
+category = "main"
 description = "Patch asyncio to allow nested event loops"
 name = "nest-asyncio"
-optional = true
+optional = false
 python-versions = ">=3.5"
 version = "1.5.1"
 
@@ -669,9 +681,17 @@ test = ["pytest (>=5.0.1)", "pytest-xdist", "hypothesis (>=3.58)"]
 category = "main"
 description = "Utilities for writing pandoc filters in python"
 name = "pandocfilters"
-optional = true
+optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "1.4.3"
+
+[[package]]
+category = "main"
+description = "parse() is the opposite of format()"
+name = "parse"
+optional = false
+python-versions = "*"
+version = "1.19.0"
 
 [[package]]
 category = "main"
@@ -749,7 +769,7 @@ category = "main"
 description = "C parser in Python"
 marker = "implementation_name == \"pypy\""
 name = "pycparser"
-optional = true
+optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "2.20"
 
@@ -837,7 +857,7 @@ category = "main"
 description = "Python for Window Extensions"
 marker = "sys_platform == \"win32\""
 name = "pywin32"
-optional = true
+optional = false
 python-versions = "*"
 version = "300"
 
@@ -853,7 +873,7 @@ version = "5.4.1"
 category = "main"
 description = "Python bindings for 0MQ"
 name = "pyzmq"
-optional = true
+optional = false
 python-versions = ">=3.6"
 version = "22.0.3"
 
@@ -1154,7 +1174,7 @@ spikemetrics = ">=0.2.4"
 category = "main"
 description = "Test utilities for code working with files and commands"
 name = "testpath"
-optional = true
+optional = false
 python-versions = "*"
 version = "0.4.4"
 
@@ -1181,7 +1201,7 @@ version = "0.10.2"
 category = "main"
 description = "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
 name = "tornado"
-optional = true
+optional = false
 python-versions = ">= 3.5"
 version = "6.1"
 
@@ -1202,7 +1222,7 @@ telegram = ["requests"]
 category = "main"
 description = "Traitlets Python configuration system"
 name = "traitlets"
-optional = true
+optional = false
 python-versions = ">=3.7"
 version = "5.0.5"
 
@@ -1236,7 +1256,7 @@ version = "0.2.5"
 category = "main"
 description = "Character encoding aliases for legacy web content"
 name = "webencodings"
-optional = true
+optional = false
 python-versions = "*"
 version = "0.5.1"
 
@@ -1269,10 +1289,10 @@ numpy = ">=1.7"
 jupyter = ["notebook", "ipytree"]
 
 [extras]
-docs = ["sphinx", "furo", "nbsphinx", "ipykernel"]
+docs = ["sphinx", "furo", "nbsphinx", "ipykernel", "autodocsumm"]
 
 [metadata]
-content-hash = "e75b9fc1dc747f6476b55731337be0ae2750fcc7259d717ffc75e614f73935fd"
+content-hash = "bbaa8b9918b1be1e289df425e2395b9d7da9f28c99c816e445c7826c1096cdf7"
 python-versions = ">=3.8"
 
 [metadata.files]
@@ -1601,6 +1621,10 @@ nbsphinx = [
     {file = "nbsphinx-0.8.3-py3-none-any.whl", hash = "sha256:2f511896259c8d0a8f479be9a32add8d01bcc7bbf9176aa18ce80a6324394a89"},
     {file = "nbsphinx-0.8.3.tar.gz", hash = "sha256:447a46ec648fbadf9b389971869efb7f62b5a2498fa71f4f4279be18ceb86365"},
 ]
+nbsphinx-link = [
+    {file = "nbsphinx-link-1.3.0.tar.gz", hash = "sha256:fa3079a74c0dff1b2079e79a34babe770706ba8aa9cc0609c6dbfd593461a077"},
+    {file = "nbsphinx_link-1.3.0-py2.py3-none-any.whl", hash = "sha256:67c24fc6508765203afb4b6939c0d9127e17a5d8d9355bfe8458192cf7105eb9"},
+]
 nest-asyncio = [
     {file = "nest_asyncio-1.5.1-py3-none-any.whl", hash = "sha256:76d6e972265063fe92a90b9cc4fb82616e07d586b346ed9d2c89a4187acea39c"},
     {file = "nest_asyncio-1.5.1.tar.gz", hash = "sha256:afc5a1c515210a23c461932765691ad39e8eba6551c055ac8d5546e69250d0aa"},
@@ -1701,6 +1725,9 @@ pandas = [
 ]
 pandocfilters = [
     {file = "pandocfilters-1.4.3.tar.gz", hash = "sha256:bc63fbb50534b4b1f8ebe1860889289e8af94a23bff7445259592df25a3906eb"},
+]
+parse = [
+    {file = "parse-1.19.0.tar.gz", hash = "sha256:9ff82852bcb65d139813e2a5197627a94966245c897796760a3a2a8eb66f020b"},
 ]
 parso = [
     {file = "parso-0.8.2-py2.py3-none-any.whl", hash = "sha256:a8c4922db71e4fdb90e0d0bc6e50f9b273d3397925e5e60a717e719201778d22"},

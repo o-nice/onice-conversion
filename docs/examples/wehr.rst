@@ -3,6 +3,7 @@ Wehr Lab Examples
 
 
 .. toctree::
+   :maxdepth: 2
 
-    ../../examples/wehr/wehr-ira.ipynb
-    ../../examples/wehr/wehr-nick.ipynb
+   wehr/wehr-ira
+   wehr/wehr-nick

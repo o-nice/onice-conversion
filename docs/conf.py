@@ -36,7 +36,9 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.autosummary',
     'sphinx.ext.mathjax',
+    'sphinx.ext.intersphinx',
     'nbsphinx',
+    'nbsphinx_link'
     'autodocsumm'
 ]
 
@@ -86,6 +88,16 @@ nbsphinx_prolog = r"""
     \textcolor{gray}{The following section was generated from
     \sphinxcode{\sphinxupquote{\strut {{ docname | escape_latex }}}} \dotfill}}
 """
+
+# --------------------------------------------------
+# intersphinx
+# --------------------------------------------------
+
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3', None),
+    'nwb-conversion-tools': ('https://nwb-conversion-tools.readthedocs.io/en/master/', None),
+    'pynwb': ('https://pynwb.readthedocs.io/en/stable/', None)
+}
 
 # --------------------------------------------------
 

@@ -8,7 +8,9 @@ ONICE NWB Conversion Tools
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents
+   :caption: User Guide
+
+
 
 .. toctree::
    :maxdepth: 2
