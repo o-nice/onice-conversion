@@ -9,10 +9,12 @@ Spec
     spec/spec.external_file
 
 .. automodule:: onice_conversion.spec
-    :members:
+   :members:
+   :inherited-members:
 
 Base Spec
 --------------------
 
 .. automodule:: onice_conversion.spec.base_spec
-    :members:
+   :members:
+   :inherited-members:

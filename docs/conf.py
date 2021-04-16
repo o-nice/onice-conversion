@@ -64,7 +64,7 @@ autodata_content = "both"
 autodoc_default_options = {
     'members': True,
     'member-order': 'bysource',
-    'private-members': True,
+    'private-members': False,
     'show-inheritance': False,
     'toctree': True,
     'undoc-members': True,
