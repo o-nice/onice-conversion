@@ -14,7 +14,7 @@ Welcome to onice_conversion's documentation!
    :maxdepth: 2
    :caption: Examples
 
-
+   examples/wehr
 
 
 .. toctree::
