@@ -2,6 +2,7 @@ from abc import abstractmethod, ABC
 import typing
 import importlib
 from pathlib import Path
+import re
 
 from nwb_conversion_tools.json_schema_utils import dict_deep_update
 
@@ -176,6 +177,32 @@ class BaseSpec(ABC, IntrospectionMixin):
                 })
 
         return out_dict
+
+
+    def _expand_named_fields(self, named_fields):
+        """
+        Convert nested key specs like key[key2] into nested dicts
+
+        borroed from: https://github.com/r1chardj0n3s/parse/blob/0477aa58673cd957c19d377e029347ce72c08b1b/parse.py#L944
+        """
+        result = {}
+        for field, value in named_fields.items():
+            # split 'aaa[bbb][ccc]...' into 'aaa' and '[bbb][ccc]...'
+            basename, subkeys = re.match(r'([^\[]+)(.*)', field).groups()
+
+            # create nested dictionaries {'aaa': {'bbb': {'ccc': ...}}}
+            d = result
+            k = basename
+
+            if subkeys:
+                for subkey in re.findall(r'\[[^\]]+\]', subkeys):
+                    d = d.setdefault(k, {})
+                    k = subkey[1:-1]
+
+            # assign the value to the last key
+            d[k] = value
+
+        return result
 
 
 def from_dict(spec_dict: dict) -> BaseSpec:
