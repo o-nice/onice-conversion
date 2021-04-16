@@ -14,15 +14,16 @@ Welcome to onice_conversion's documentation!
    :maxdepth: 2
    :caption: Examples
 
-   examples/wehr
+   Wehr Lab <examples/wehr>
 
 
 .. toctree::
    :maxdepth: 4
    :caption: API Documentation
 
-   api/containers.rst
-   api/
+   api/containers
+   api/nwbconverter
+   api/utils
 
 
 
