@@ -1,8 +1,4 @@
 Utils
 ======
 
-.. autosummary::
-    :toctree:
-    :recursive:
-
-    onice_conversion.utils
+.. automodule:: onice_conversion.utils

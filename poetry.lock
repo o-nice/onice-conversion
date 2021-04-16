@@ -2,7 +2,7 @@
 category = "main"
 description = "A configurable sidebar-enabled Sphinx theme"
 name = "alabaster"
-optional = true
+optional = false
 python-versions = "*"
 version = "0.7.12"
 
@@ -11,7 +11,7 @@ category = "main"
 description = "Disable App Nap on macOS >= 10.9"
 marker = "sys_platform == \"darwin\" or platform_system == \"Darwin\""
 name = "appnope"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.1.2"
 
@@ -56,9 +56,20 @@ tests_no_zope = ["coverage (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0
 
 [[package]]
 category = "main"
+description = "Extended sphinx autodoc including automatic autosummaries"
+name = "autodocsumm"
+optional = false
+python-versions = ">=3.5"
+version = "0.2.3"
+
+[package.dependencies]
+sphinx = ">=2.2"
+
+[[package]]
+category = "main"
 description = "Internationalization utilities"
 name = "babel"
-optional = true
+optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "2.9.0"
 
@@ -69,7 +80,7 @@ pytz = ">=2015.7"
 category = "main"
 description = "Specifications for callback functions passed in to an API"
 name = "backcall"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.2.0"
 
@@ -116,7 +127,7 @@ category = "main"
 description = "Foreign Function Interface for Python calling C code."
 marker = "implementation_name == \"pypy\""
 name = "cffi"
-optional = false
+optional = true
 python-versions = "*"
 version = "1.14.5"
 
@@ -160,7 +171,7 @@ version = "0.7.1"
 category = "main"
 description = "Docutils -- Python Documentation Utilities"
 name = "docutils"
-optional = true
+optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 version = "0.16"
 
@@ -238,7 +249,7 @@ version = "2.10"
 category = "main"
 description = "Getting image size from png/jpeg/jpeg2000/gif file"
 name = "imagesize"
-optional = true
+optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "1.2.0"
 
@@ -254,7 +265,7 @@ version = "1.1.1"
 category = "main"
 description = "IPython Kernel for Jupyter"
 name = "ipykernel"
-optional = false
+optional = true
 python-versions = ">=3.5"
 version = "5.5.3"
 
@@ -272,7 +283,7 @@ test = ["pytest (!=5.3.4)", "pytest-cov", "flaky", "nose", "jedi (<=0.17.2)"]
 category = "main"
 description = "IPython: Productive Interactive Computing"
 name = "ipython"
-optional = false
+optional = true
 python-versions = ">=3.7"
 version = "7.22.0"
 
@@ -304,7 +315,7 @@ test = ["nose (>=0.10.1)", "requests", "testpath", "pygments", "nbformat", "ipyk
 category = "main"
 description = "Vestigial utilities from IPython"
 name = "ipython-genutils"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.2.0"
 
@@ -312,7 +323,7 @@ version = "0.2.0"
 category = "main"
 description = "An autocompletion tool for Python that can be used for text editors."
 name = "jedi"
-optional = false
+optional = true
 python-versions = ">=3.6"
 version = "0.18.0"
 
@@ -327,7 +338,7 @@ testing = ["Django (<3.1)", "colorama", "docopt", "pytest (<6.0.0)"]
 category = "main"
 description = "A very fast and expressive template engine."
 name = "jinja2"
-optional = true
+optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 version = "2.11.3"
 
@@ -367,7 +378,7 @@ format_nongpl = ["idna", "jsonpointer (>1.13)", "webcolors", "rfc3986-validator 
 category = "main"
 description = "Jupyter protocol implementation and client libraries"
 name = "jupyter-client"
-optional = false
+optional = true
 python-versions = ">=3.6.1"
 version = "6.2.0"
 
@@ -387,7 +398,7 @@ test = ["async-generator", "ipykernel", "ipython", "mock", "pytest-asyncio", "py
 category = "main"
 description = "Jupyter core package. A base package on which Jupyter projects rely."
 name = "jupyter-core"
-optional = false
+optional = true
 python-versions = ">=3.6"
 version = "4.7.1"
 
@@ -436,7 +447,7 @@ source = ["Cython (>=0.29.7)"]
 category = "main"
 description = "Safely add untrusted strings to HTML/XML markup."
 name = "markupsafe"
-optional = true
+optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
 version = "1.1.1"
 
@@ -548,7 +559,7 @@ traitlets = "*"
 category = "main"
 description = "Patch asyncio to allow nested event loops"
 name = "nest-asyncio"
-optional = false
+optional = true
 python-versions = ">=3.5"
 version = "1.5.1"
 
@@ -666,7 +677,7 @@ version = "1.4.3"
 category = "main"
 description = "A Python Parser"
 name = "parso"
-optional = false
+optional = true
 python-versions = ">=3.6"
 version = "0.8.2"
 
@@ -679,7 +690,7 @@ category = "main"
 description = "Pexpect allows easy control of interactive console applications."
 marker = "sys_platform != \"win32\""
 name = "pexpect"
-optional = false
+optional = true
 python-versions = "*"
 version = "4.8.0"
 
@@ -690,7 +701,7 @@ ptyprocess = ">=0.5"
 category = "main"
 description = "Tiny 'shelve'-like database with concurrency support"
 name = "pickleshare"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.7.5"
 
@@ -709,7 +720,7 @@ dev = ["pre-commit", "tox"]
 category = "main"
 description = "Library for building powerful interactive command lines in Python"
 name = "prompt-toolkit"
-optional = false
+optional = true
 python-versions = ">=3.6.1"
 version = "3.0.18"
 
@@ -721,7 +732,7 @@ category = "main"
 description = "Run a subprocess in a pseudo terminal"
 marker = "sys_platform != \"win32\""
 name = "ptyprocess"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.7.0"
 
@@ -738,7 +749,7 @@ category = "main"
 description = "C parser in Python"
 marker = "implementation_name == \"pypy\""
 name = "pycparser"
-optional = false
+optional = true
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "2.20"
 
@@ -826,7 +837,7 @@ category = "main"
 description = "Python for Window Extensions"
 marker = "sys_platform == \"win32\""
 name = "pywin32"
-optional = false
+optional = true
 python-versions = "*"
 version = "300"
 
@@ -842,7 +853,7 @@ version = "5.4.1"
 category = "main"
 description = "Python bindings for 0MQ"
 name = "pyzmq"
-optional = false
+optional = true
 python-versions = ">=3.6"
 version = "22.0.3"
 
@@ -950,7 +961,7 @@ version = "1.15.0"
 category = "main"
 description = "This package provides 29 stemmers for 28 languages generated from Snowball algorithms."
 name = "snowballstemmer"
-optional = true
+optional = false
 python-versions = "*"
 version = "2.1.0"
 
@@ -967,7 +978,7 @@ version = "2.2.1"
 category = "main"
 description = "Python documentation generator"
 name = "sphinx"
-optional = true
+optional = false
 python-versions = ">=3.5"
 version = "3.5.2"
 
@@ -999,7 +1010,7 @@ test = ["pytest", "pytest-cov", "html5lib", "cython", "typed-ast"]
 category = "main"
 description = "sphinxcontrib-applehelp is a sphinx extension which outputs Apple help books"
 name = "sphinxcontrib-applehelp"
-optional = true
+optional = false
 python-versions = ">=3.5"
 version = "1.0.2"
 
@@ -1011,7 +1022,7 @@ test = ["pytest"]
 category = "main"
 description = "sphinxcontrib-devhelp is a sphinx extension which outputs Devhelp document."
 name = "sphinxcontrib-devhelp"
-optional = true
+optional = false
 python-versions = ">=3.5"
 version = "1.0.2"
 
@@ -1023,7 +1034,7 @@ test = ["pytest"]
 category = "main"
 description = "sphinxcontrib-htmlhelp is a sphinx extension which renders HTML help files"
 name = "sphinxcontrib-htmlhelp"
-optional = true
+optional = false
 python-versions = ">=3.5"
 version = "1.0.3"
 
@@ -1035,7 +1046,7 @@ test = ["pytest", "html5lib"]
 category = "main"
 description = "A sphinx extension which renders display math in HTML via JavaScript"
 name = "sphinxcontrib-jsmath"
-optional = true
+optional = false
 python-versions = ">=3.5"
 version = "1.0.1"
 
@@ -1046,7 +1057,7 @@ test = ["pytest", "flake8", "mypy"]
 category = "main"
 description = "sphinxcontrib-qthelp is a sphinx extension which outputs QtHelp document."
 name = "sphinxcontrib-qthelp"
-optional = true
+optional = false
 python-versions = ">=3.5"
 version = "1.0.3"
 
@@ -1058,7 +1069,7 @@ test = ["pytest"]
 category = "main"
 description = "sphinxcontrib-serializinghtml is a sphinx extension which outputs \"serialized\" HTML files (json and pickle)."
 name = "sphinxcontrib-serializinghtml"
-optional = true
+optional = false
 python-versions = ">=3.5"
 version = "1.1.4"
 
@@ -1170,7 +1181,7 @@ version = "0.10.2"
 category = "main"
 description = "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
 name = "tornado"
-optional = false
+optional = true
 python-versions = ">= 3.5"
 version = "6.1"
 
@@ -1191,7 +1202,7 @@ telegram = ["requests"]
 category = "main"
 description = "Traitlets Python configuration system"
 name = "traitlets"
-optional = false
+optional = true
 python-versions = ">=3.7"
 version = "5.0.5"
 
@@ -1217,7 +1228,7 @@ socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7,<2.0)"]
 category = "main"
 description = "Measures the displayed width of unicode strings in a terminal"
 name = "wcwidth"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.2.5"
 
@@ -1258,10 +1269,10 @@ numpy = ">=1.7"
 jupyter = ["notebook", "ipytree"]
 
 [extras]
-docs = ["sphinx", "furo", "nbsphinx"]
+docs = ["sphinx", "furo", "nbsphinx", "ipykernel"]
 
 [metadata]
-content-hash = "936c79ce49b3c9bc7c8a39efbdab53d00b1376bbdb1bb5c7e5a80a15e48b4e7a"
+content-hash = "e75b9fc1dc747f6476b55731337be0ae2750fcc7259d717ffc75e614f73935fd"
 python-versions = ">=3.8"
 
 [metadata.files]
@@ -1287,6 +1298,9 @@ atomicwrites = [
 attrs = [
     {file = "attrs-20.3.0-py2.py3-none-any.whl", hash = "sha256:31b2eced602aa8423c2aea9c76a724617ed67cf9513173fd3a4f03e3a929c7e6"},
     {file = "attrs-20.3.0.tar.gz", hash = "sha256:832aa3cde19744e49938b91fea06d69ecb9e649c93ba974535d08ad92164f700"},
+]
+autodocsumm = [
+    {file = "autodocsumm-0.2.3.tar.gz", hash = "sha256:92aac24efb39c9912d383683e401165ff9fa20ff87b78e41658b9731e35a055b"},
 ]
 babel = [
     {file = "Babel-2.9.0-py2.py3-none-any.whl", hash = "sha256:9d35c22fcc79893c3ecc85ac4a56cde1ecf3f19c540bba0922308a6c06ca6fa5"},

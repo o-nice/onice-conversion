@@ -1,8 +1,6 @@
 PyNWB Containers
 =================
 
-.. autosummary::
-    :toctree:
-    :recursive:
+.. automodule:: onice_conversion.containers
 
-    onice_conversion.containers
+.. automodule:: onice_conversion.containers.container

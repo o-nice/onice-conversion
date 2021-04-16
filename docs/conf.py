@@ -36,7 +36,8 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.autosummary',
     'sphinx.ext.mathjax',
-    'nbsphinx'
+    'nbsphinx',
+    'autodocsumm'
 ]
 
 # --------------------------------------------------
@@ -63,6 +64,7 @@ autodoc_default_options = {
     'show-inheritance': False,
     'toctree': True,
     'undoc-members': True,
+    'autosummary': True
 }
 
 # --------------------------------------------------

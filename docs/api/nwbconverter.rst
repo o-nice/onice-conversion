@@ -1,8 +1,4 @@
 NWB Converter
 ==============
 
-.. autosummary::
-    :toctree:
-    :recursive:
-
-    onice_conversion.nwbconverter
+.. automodule:: onice_conversion.nwbconverter

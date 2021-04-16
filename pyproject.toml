@@ -15,10 +15,11 @@ sphinx = {version = "^3.5.2", optional = true}
 furo = {version = "^2021.2.28-beta.28", optional = true}
 nbsphinx = {version="^0.8.3", optional = true}
 ipykernel = {version="^5.5.3", optional = true}
+autodocsumm = {version="^0.2.3", optional = true}
 
 
 [tool.poetry.extras]
-docs = ['sphinx', 'furo', 'nbsphinx', 'ipykernel']
+docs = ['sphinx', 'furo', 'nbsphinx', 'ipykernel', 'autodocsumm']
 
 
 [tool.poetry.dev-dependencies]
