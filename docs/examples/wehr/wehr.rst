@@ -3,7 +3,7 @@ Wehr Lab Examples
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    wehr-ira
    wehr-nick
