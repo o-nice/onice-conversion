@@ -14,7 +14,7 @@ ONICE NWB Conversion Tools
    :maxdepth: 2
    :caption: Examples
 
-   Wehr Lab <examples/wehr/wehr>
+   Wehr Lab <examples/wehr>
 
 
 .. toctree::
