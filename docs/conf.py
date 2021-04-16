@@ -80,13 +80,16 @@ nbsphinx_kernel_name = 'python3'
 nbsphinx_prolog = r"""
 {% set docname = 'doc/' + env.doc2path(env.docname, base=None) %}
 .. raw:: html
+
     <div class="admonition note">
       This page was generated from
       <a class="reference external" href="https://github.com/o-nice/onice-conversion/blob/main/{{ docname|e }}">{{ docname|e }}</a>.
       Interactive online version:
       <span style="white-space: nowrap;"><a href="https://mybinder.org/v2/gh/o-nice/onice-conversion/main?filepath={{ docname|e }}"><img alt="Binder badge" src="https://mybinder.org/badge_logo.svg" style="vertical-align:text-bottom"></a>.</span>
     </div>
+    
 .. raw:: latex
+
     \nbsphinxstartnotebook{\scriptsize\noindent\strut
     \textcolor{gray}{The following section was generated from
     \sphinxcode{\sphinxupquote{\strut {{ docname | escape_latex }}}} \dotfill}}
