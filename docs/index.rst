@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to onice_conversion's documentation!
+ONICE NWB Conversion Tools
 ============================================
 
 .. toctree::
@@ -14,7 +14,7 @@ Welcome to onice_conversion's documentation!
    :maxdepth: 2
    :caption: Examples
 
-   Wehr Lab <examples/wehr>
+   Wehr Lab <examples/wehr/wehr>
 
 
 .. toctree::
