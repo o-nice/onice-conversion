@@ -72,6 +72,9 @@ autodoc_default_options = {
 # --------------------------------------------------
 # nbsphinx config
 # --------------------------------------------------
+
+nbsphinx_kernel_name = 'python3'
+
 # robbed from https://github.com/spatialaudio/nbsphinx/blob/feb64b00a0c0310991f0c17c712842725c43d163/doc/conf.py#L34
 # see https://nbsphinx.readthedocs.io/en/0.8.3/prolog-and-epilog.html
 nbsphinx_prolog = r"""
