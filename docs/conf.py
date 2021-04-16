@@ -38,7 +38,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.intersphinx',
     'nbsphinx',
-    'nbsphinx_link'
+    'nbsphinx_link',
     'autodocsumm'
 ]
 
