@@ -23,8 +23,9 @@ ONICE NWB Conversion Tools
    :maxdepth: 4
    :caption: API Documentation
 
-   api/containers
    api/nwbconverter
+   api/spec
+   api/containers
    api/utils
 
 
