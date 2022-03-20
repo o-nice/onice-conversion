@@ -3,12 +3,30 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to onice_conversion's documentation!
+ONICE NWB Conversion Tools
 ============================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: User Guide
+
+   guide/contributing
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Examples
+
+   Wehr Lab <examples/wehr/wehr>
+
+
+.. toctree::
+   :maxdepth: 4
+   :caption: API Documentation
+
+   api/nwbconverter
+   api/spec
+   api/containers
+   api/utils
 
 
 

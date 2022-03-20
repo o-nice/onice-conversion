@@ -130,3 +130,5 @@ dmypy.json
 
 
 .idea
+.DS_Store
+examples/wehr/2021-02-26_17-19-10_mouse-0232
