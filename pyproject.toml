@@ -8,7 +8,7 @@ license = "MPL-2.0"
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
 wheel = "^0.36.2"
-pynwb = "^1.4.0"
+pynwb = "^2.0,!=2.5.1"
 nwb-conversion-tools = { git = "https://github.com/sneakers-the-rat/nwb-conversion-tools.git", branch = "onice" }
 lxml = "^4.6.3"
 parse = "^1.19.0"
@@ -20,10 +20,11 @@ autodocsumm = {version="^0.2.3", optional = true}
 nbsphinx_link = {version="^1.3.0", optional = true}
 pandas = "^1.2.4"
 pyopenephys = "^1.1.3"
+myst-parser = {version = "^0.17.0", optional = true}
 
 
 [tool.poetry.extras]
-docs = ['sphinx', 'furo', 'nbsphinx', 'ipykernel', 'autodocsumm', 'nbsphinx_link']
+docs = ['sphinx', 'furo', 'nbsphinx', 'ipykernel', 'autodocsumm', 'nbsphinx_link', "myst-parser"]
 
 
 [tool.poetry.dev-dependencies]
