@@ -6,7 +6,7 @@ authors = ["sneakers-the-rat <JLSaunders987@gmail.com>"]
 license = "MPL-2.0"
 
 [tool.poetry.dependencies]
-python = ">=3.8"
+python = ">=3.8,<4.0"
 wheel = "^0.36.2"
 pynwb = "^1.4.0"
 nwb-conversion-tools = { git = "https://github.com/sneakers-the-rat/nwb-conversion-tools.git", branch = "onice" }

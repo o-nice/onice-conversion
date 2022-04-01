@@ -40,7 +40,8 @@ extensions = [
     'sphinx.ext.todo',
     'nbsphinx',
     'nbsphinx_link',
-    'autodocsumm'
+    'autodocsumm',
+    'myst_parser'
 ]
 
 # --------------------------------------------------
@@ -68,7 +69,7 @@ autodoc_default_options = {
     'show-inheritance': False,
     'toctree': True,
     'undoc-members': True,
-    'autosummary': True
+    'autosummary': True,
 }
 
 # --------------------------------------------------
