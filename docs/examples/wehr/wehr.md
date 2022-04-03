@@ -8,8 +8,3 @@ data to NWB!
 This example has multiple video files as well as electrophysiology!
 
 ## [Ira](wehr-ira)
-
-```{toctree}
-wehr-ira
-wehr-nick
-```
