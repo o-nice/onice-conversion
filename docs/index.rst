@@ -16,6 +16,7 @@ ONICE NWB Conversion Tools
    :maxdepth: 3
    :caption: Examples
 
+   Smear Lab <examples/smear/smear>
    Wehr Lab <examples/wehr/wehr>
 
 

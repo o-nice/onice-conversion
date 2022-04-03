@@ -3,3 +3,7 @@
 ## [Reese](reese)
 
 Example presented at ONICE meeting 2022-04-01. 
+
+```{toctree}
+reese
+```
