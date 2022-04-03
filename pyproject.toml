@@ -13,7 +13,7 @@ nwb-conversion-tools = { git = "https://github.com/sneakers-the-rat/nwb-conversi
 lxml = "^4.6.3"
 parse = "^1.19.0"
 sphinx = {version = "^4.5.0", optional = true}
-furo = {version = "^2021.2.28-beta.28", optional = true}
+furo = {version = "^2022.3.4", optional = true}
 nbsphinx = {version="^0.8.3", optional = true}
 ipykernel = {version="^5.5.3", optional = true}
 autodocsumm = {version="^0.2.3", optional = true}

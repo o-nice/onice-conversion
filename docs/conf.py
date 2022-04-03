@@ -13,6 +13,10 @@
 import os
 import sys
 import pkg_resources
+import typing
+if typing.TYPE_CHECKING:
+    from sphinx.application import Sphinx
+
 sys.path.insert(0, os.path.abspath('../'))
 
 
@@ -130,3 +134,6 @@ html_theme = 'furo'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+def setup(app:'Sphinx'):
+    app.add_css_file('expand.css')
