@@ -7,9 +7,9 @@ Presented at ONICE meeting 2022-04-01. Sample dataset to be uploaded separately
 Demonstrates reading trialwise behavior data for odor concentration experiment, including
 
 * Making an {class}`pynwb.NWBFile` with a {class}`pynwb.file.Subject` description
-* Trialwise data using {meth}`pynwb.NWBFile.add_trial`
+* Trialwise data using {meth}`pynwb.file.NWBFile.add_trial`
 * Spatial data from pose tracking using {class}`pynwb.behavior.Position`
-* Generic Timeseries data for analog sniff signal using {class}`pynwb.TimeSeries`
+* Generic Timeseries data for analog sniff signal using {class}`pynwb.base.TimeSeries`
 * Writing an NWBFile with {class}`pynwb.NWBHDF5IO`
 
 ```{literalinclude} ../../../examples/smear/reese.py
@@ -210,6 +210,24 @@ we help keep track of what everything does, so this function would have its docu
         
     References:
         https://pynwb.readthedocs.io/en/stable/tutorials/general/file.html?highlight=Position#spatial-series-and-position
+
+```
+
+
+```{function} onice_conversion.add_frame_data(nwbfile:NWBFile, frame_data:Frame_Data, module_name:str, description:str)
+
+Load the data from a given frame data file and add it to an NWB IO file.
+
+Creates a :class:`~pynwb.base.ProcessingModule` 
+
+Args:
+    nwbfile: File to add to!
+    frame_data (List[:class:`.Frame_Data`]): see :func:`.load_frame_data`
+    module_name (str): Name to give to the created ProcessingModule
+    description (str): Description to give to the created ProcessingModule
+    
+References:
+    https://pynwb.readthedocs.io/en/stable/tutorials/general/file.html?highlight=Position#spatial-series-and-position
 
 ```
 
