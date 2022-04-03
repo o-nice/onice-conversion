@@ -219,7 +219,7 @@ processing operations, and so on, but that's for another time!
 
 ### Warnings
 
-```{todo}
+```{admonition} todo
 (warn about using default values)
 ```
 
@@ -239,7 +239,7 @@ else:
 
 ### `pathlib`!
 
-```{todo}
+```{admonition} todo
 show use of pathlib vs os.path
 ```
 
