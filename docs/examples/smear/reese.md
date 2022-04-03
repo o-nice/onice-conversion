@@ -196,38 +196,20 @@ By writing docstrings as we go (and using types and type hints, which we'll cove
 we help keep track of what everything does, so this function would have its documentation rendered like:
 
 ```{eval-rst}
-.. py:function:: onice_conversion.add_frame_data(nwbfile:NWBFile, frame_data:Frame_Data, module_name:str, description:str)
+.. py:function:: onice_conversion.add_frame_data(nwbfile: NWBFile, frame_data:Frame_Data, module_name:str, description:str)
     
     Load the data from a given frame data file and add it to an NWB IO file.
     
     Creates a :class:`~pynwb.base.ProcessingModule` 
     
     Args:
-        nwbfile: File to add to!
-        frame_data (List[:class:`.Frame_Data`]): see :func:`.load_frame_data`
-        module_name (str): Name to give to the created ProcessingModule
-        description (str): Description to give to the created ProcessingModule
+        nwbfile (NWBFile) : File to add to!
+        frame_data (List[:class:`.Frame_Data`]) : see :func:`.load_frame_data`
+        module_name (str) : Name to give to the created ProcessingModule
+        description (str) : Description to give to the created ProcessingModule
         
     References:
         https://pynwb.readthedocs.io/en/stable/tutorials/general/file.html?highlight=Position#spatial-series-and-position
-
-```
-
-
-```{function} onice_conversion.add_frame_data(nwbfile:NWBFile, frame_data:Frame_Data, module_name:str, description:str)
-
-Load the data from a given frame data file and add it to an NWB IO file.
-
-Creates a :class:`~pynwb.base.ProcessingModule` 
-
-Args:
-    nwbfile: File to add to!
-    frame_data (List[:class:`.Frame_Data`]): see :func:`.load_frame_data`
-    module_name (str): Name to give to the created ProcessingModule
-    description (str): Description to give to the created ProcessingModule
-    
-References:
-    https://pynwb.readthedocs.io/en/stable/tutorials/general/file.html?highlight=Position#spatial-series-and-position
 
 ```
 
